@@ -31,8 +31,8 @@ require('lazy').setup({
         { import = 'plugins.core' },
         { import = 'plugins.core.coding' },
         {
-            dir = '/home/elloce/.config/nvim/plugins/Session.nvim',
-            opts = { options = { paths = 'sessions/' } },
+            dir = '/home/bjohns/.config/nvim/plugins/Session.nvim',
+            opts = { options = { path = 'sessions/' } },
         },
     },
 

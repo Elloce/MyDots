@@ -4,6 +4,7 @@ return {
     opts = {
         indent = { enabled = true },
         notifier = { enabled = true },
+        picker = { enabled = true },
     },
     keys = {
         {
