@@ -64,7 +64,7 @@ end, {
 vim.api.nvim_create_autocmd('VimLeave', {
     group = vim.api.nvim_create_augroup('session-save', { clear = true }),
     callback = function()
-        if not M.options.paused then
+        if not M.config.options.paused then
             save_session()
         end
     end,

@@ -32,7 +32,11 @@ require('lazy').setup({
         { import = 'plugins.core.coding' },
         {
             dir = '/home/bjohns/.config/nvim/plugins/Session.nvim',
-            opts = { options = { path = 'sessions/' } },
+            opts = { options = { path = 'sessions/', paused = true } },
+        },
+        {
+            dir = '/home/bjohns/.config/nvim/plugins/Snagged.vim',
+            opts = {},
         },
     },
 

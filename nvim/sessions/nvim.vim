@@ -13,13 +13,11 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +4 ~/.config/nvim/lua/plugins/core/coding/lsp.lua
-badd +1 ~/.config/nvim/plugins/Session.nvim/lua/session/init.lua
+badd +30 ~/.config/nvim/plugins/Snagged.vim/lua/snagged/init.lua
 argglobal
 %argdel
-edit ~/.config/nvim/plugins/Session.nvim/lua/session/init.lua
+edit ~/.config/nvim/plugins/Snagged.vim/lua/snagged/init.lua
 argglobal
-balt ~/.config/nvim/lua/plugins/core/coding/lsp.lua
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -30,11 +28,11 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 1 - ((0 * winheight(0) + 23) / 46)
+let s:l = 37 - ((36 * winheight(0) + 23) / 46)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1
+keepjumps 37
 normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
