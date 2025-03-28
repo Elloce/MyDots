@@ -1,0 +1,15 @@
+# ~/.config/alacritty/alacritty.toml
+
+# Font Configuration
+[font]
+  # Normal (regular) font face
+  normal = { family = "JetBrains Mono Nerd Font", style = "Regular" }
+
+  # Bold font face
+  bold = { family = "JetBrains Mono Nerd Font", style = "Bold" }
+
+  # Italic font face
+  italic = { family = "JetBrains Mono Nerd Font", style = "Italic" }
+
+  # Size of the font
+  size = 12.0
